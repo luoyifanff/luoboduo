@@ -1,0 +1,19 @@
+#header{
+        position: relative;
+        z-index: 10000;
+        height: .7rem;      
+        background: #f99;
+        padding: 0 .2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            height: .7rem;
+            
+        }
+        .user{
+            font-size: .2rem;
+            a{color: #333;margin-left: .05rem;}
+        }
+    }
+    

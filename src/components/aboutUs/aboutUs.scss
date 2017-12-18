@@ -1,0 +1,53 @@
+#aboutUs{
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        li{
+            height: .5rem; 
+            a{
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }    
+            i{
+                display: inline-block;
+                width: .3rem;
+                height: .3rem;
+                background: url(../../assets/aboutUs.png) no-repeat;
+                background-size: 1.2rem;
+                margin-right: .1rem;
+            }
+            &:first-child i{background-position: -.3rem -.05rem;}
+            &:last-child i{background-position: -.9rem -.05rem;}
+        }
+        
+    }
+    .changecolor1{          
+        color: red;
+        #bg1{background-position: 0 -.05rem;} /* 用id提升一下i的优先级*/
+    }
+    .changecolor2{      
+        color: red;
+        #bg2{background-position: -.6rem -.05rem;}      
+    }   
+}
+
+.example-apper {
+        opacity: 0;
+    }
+    
+    .example-apper.example-apper-active {
+       opacity: 1;  
+        transition: opacity 300ms ease-in;
+    }
+    
+    .example-leave {
+        opacity: 1;
+    }
+    
+    .example-leave.example-leave-active {
+        opacity: 0;
+        transition: opacity 300ms ease-in;
+    }

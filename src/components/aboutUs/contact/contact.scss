@@ -1,0 +1,26 @@
+ #contact{     
+    article{
+        padding-left: 1.1rem;
+        margin: 1.2rem 0;
+        h5{font-weight: 900;margin-bottom: .5rem;font-size: .28rem;}
+        ul{
+            li{
+                display: flex;
+                height: .6rem;
+                align-items: center;
+                span{margin: 0 .2rem;}
+                img{
+                    width: .3rem;
+                    
+                }
+            }
+        }
+        .address{
+            height: auto;
+            margin-top: .3rem;
+            img{width: 4rem;}
+        }
+    }
+
+   
+ }  

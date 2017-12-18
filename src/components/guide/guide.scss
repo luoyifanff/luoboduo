@@ -1,0 +1,52 @@
+aside{
+    background: #e9e9e9;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+    ul{
+        padding: .1rem 1.3rem;
+        li{
+            padding: .1rem 0;
+                     
+        }
+    }
+    .QRcode{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: .5rem;
+        label{margin-top: .05rem;}
+    }
+    .uploadimg{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: .5rem;
+        label{margin-top: .05rem;}
+    }
+    
+}
+.lighted{
+        border-bottom: .02rem solid hotpink;
+        
+    }
+.example-enter {
+    transform: translateY(-100%);
+}
+
+.example-enter.example-enter-active {
+    transform: translateY(0);  
+    transition: transform 300ms ease-in;
+}
+
+.example-leave {
+    transform: translateY(0);
+}
+
+.example-leave.example-leave-active {
+    transform: translateY(-100%);
+    transition: transform 300ms ease-in;
+}

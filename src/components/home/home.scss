@@ -1,0 +1,36 @@
+#home{
+    .pic1{width: 100%;margin-bottom: 1rem;}
+    ul{
+
+        text-align: center;
+        img{
+            display: inline-block;
+            margin-bottom: .05rem;
+        }
+        p{font-weight: 700;margin:.1rem 0;}
+        li{
+            margin: .2rem 0;
+        }
+    }
+    #newPosition{
+        margin-top: 1rem;
+        text-align: center;
+        p{margin: auto;}
+        h3{
+            font-size: .34rem;
+        } 
+        .my-swipe {          
+            height: 4.5rem;
+            width: 5rem;
+            margin: .5rem auto;  
+            text-align: center;
+            img{width: 5rem;height: 3rem;}
+            p{font:700 .28rem '';margin-top: .1rem;}                      
+            .line{
+                border-bottom: .02rem solid #f40;
+                width: .3rem;
+                margin:.05rem auto;
+            }           
+        }        
+    }
+}

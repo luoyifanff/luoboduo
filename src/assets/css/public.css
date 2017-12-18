@@ -1,0 +1,30 @@
+
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td{margin:0;padding:0;}
+body#body{word-wrap:break-word;font-size: 0.24rem;}/*允许长单词或 URL地址换行到下一行*/
+fieldset ,a img,.bor0 {border:0;}
+li{list-style:none;}
+i,em,b{font-style:normal;font-weight:100;}
+a img{border:0;}/*IE各版本中都会在图片被a标签包裹时出现边框，这个边框属于img*/
+input,textarea{outline:none;}
+a,u,del{text-decoration:none;}
+textarea{resize:none;}/*不允许改变多行文本框尺寸*/
+a:hover{text-decoration:underline;}
+mark{background: none;}
+input{outline: none;}/*取消火狐中input被选中时出现的发光边框*/
+
+.clear:before{content:"";display:table;}
+/*消除margin无限向上传递*/
+.clear:after{content:"";clear:both;display:block;}
+/*万能清除浮动元素的父元素高度塌陷*/
+.clear{zoom:1;}/*清除ie的浮动*/
+
+
+
+.valign:before{content:"";display:inline-block;width:0;height:100%;vertical-align:middle;}
+.valign img{vertical-align:middle;display:inline-block;}
+/*垂直居中*/
+
+
+.over{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+/*文本溢出所在框体宽度时显示省略号*/

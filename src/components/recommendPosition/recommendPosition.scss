@@ -1,0 +1,66 @@
+#recommendPosition{
+    ul{
+        padding: .3rem;    
+        li{
+            display: flex;
+            border: .01rem solid #999;
+            margin-top: .2rem;
+            padding: .2rem;
+            .logo{      
+                border: .01rem solid #999;
+                padding: .1rem;
+                width: 2rem;
+                height: 2rem;
+                box-sizing:content-box;         
+                img{
+                    display: inline-block;
+                    width: 2rem;
+                    vertical-align:middle;          
+                }
+            }
+            .logo:before{
+                content:"";display:inline-block;width:0;height:100%;vertical-align:middle;
+            }       
+            .introduction{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin-left: .2rem;
+                overflow: hidden;
+                padding-top: .3rem;
+                .salary{
+                    color: #fc2b47;
+                }
+                b{
+                    width: 100%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow:ellipsis;
+                    font-weight: bold;
+                }           
+                span{
+                    line-height: .5rem;
+                }
+                .company{
+                    width: 100%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow:ellipsis;
+                }
+            }
+        }
+    }
+    ol{
+        display: flex;
+        justify-content: center;
+        margin-bottom: .4rem;
+        li{
+           width: .5rem;
+           height: .5rem;
+           border: 1px solid #286090;
+           margin: 0 .1rem;
+           text-align: center;
+           font: 700 .26rem/.5rem ''; 
+        }
+    }
+}
