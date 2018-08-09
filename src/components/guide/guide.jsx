@@ -45,14 +45,14 @@ class Guide extends Component{
 							<li><NavLink to='/findjob' activeClassName='lighted' >找职位</NavLink></li>
 							<li><NavLink to='/AboutUs' activeClassName='lighted'>关于我们</NavLink></li>
 						</ul>
-						<div className = 'QRcode'>
+						{/* <div className = 'QRcode'>
 							<span className = 'glyphicon glyphicon-qrcode' onClick={this.openQRcode.bind(this)}></span>
 							<label>微信扫一扫</label>
 						</div>
 						<div className = 'uploadimg'>
 							<span className = 'glyphicon glyphicon-picture'></span>
 							<label>上传图片</label>
-						</div>
+						</div> */}
 					</aside>
 					:null
 				}

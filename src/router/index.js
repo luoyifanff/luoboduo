@@ -46,7 +46,7 @@ const router = (
      			</AboutUs>
      		)}/>    		
      		<Redirect from='*' to='/home'/>
-    	</Switch>   	
+    	</Switch>
     </App>
   </Router>
   </Provider>

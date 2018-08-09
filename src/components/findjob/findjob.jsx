@@ -6,7 +6,11 @@ import { Carousel, WhiteSpace, WingBlank } from 'antd-mobile'
 import axios from 'axios'
 import {connect} from 'react-redux'
 class FindJob extends Component{
+	constructor(props) {
+		super(props);
+		console.log(this.props.children)
 
+	}
 	componentWillMount(){
 		if(this.props.searchBGImg.length==0){
 			this.props.getSwipe()

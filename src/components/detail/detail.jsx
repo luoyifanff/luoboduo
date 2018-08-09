@@ -111,25 +111,21 @@ class Detail extends Component{
 		this.setState({
 			isShow : !this.state.isShow
 		})
-		var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-		document.getElementById('intersted').style.top=scrollTop+'px';
-		document.documentElement.style.overflow='hidden';   //阻止页面滚动(web模拟的移动端上有效)
+		// var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+		// document.getElementById('intersted').style.top=scrollTop+'px';
+		// document.documentElement.style.overflow='hidden';   //阻止页面滚动(web模拟的移动端上有效)
 //		document.body.ontouchmove=function(e){
 //			e.preventDefault()		
 //		}
-		document.body.addEventListener('touchmove',function zhezhao(e){  //上面那个在移动端没用
-			e.preventDefault()	
-		})
+		document.body.addEventListener('touchmove', this.zhezhao)
 	}
 	close(){
 		this.setState({
 			isShow : !this.state.isShow
 		})
-		document.documentElement.style.overflow = 'visible';    //恢复默认值	
+		// document.documentElement.style.overflow = 'visible';    //恢复默认值	
 //		document.body.ontouchmove=null;
-		document.body.removeEventListener('touchmove',function zhezhao(e){ 
-			e.preventDefault()	
-		})
+		document.body.removeEventListener('touchmove', this.zhezhao)
 	}
 	
 	starClick(){
@@ -170,6 +166,10 @@ class Detail extends Component{
 			}
 		}
 		return collectionList;
+	}
+
+	zhezhao(e){  //上面那个在移动端没用
+		e.preventDefault()	
 	}
 }
 
