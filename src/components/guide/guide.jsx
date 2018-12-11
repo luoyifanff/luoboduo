@@ -11,8 +11,7 @@ class Guide extends Component{
 		this.state={
 			isShow:true
 		}
-	} 
-	
+	};
 	
 	componentWillMount(){
 		
@@ -28,7 +27,7 @@ class Guide extends Component{
 //          ]
 //      });
 		
-	}
+	};
 	render(){
 		return (
 			<section id='guide'>

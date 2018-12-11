@@ -18,6 +18,10 @@ class Head extends Component{
 			</header>	
 		)
 	}
+	componentWillReceiveProps(a, nextProps) {
+		console.log(a, nextProps);
+		
+	}
 	handleClick(){
 		this.props.event() //主动触发父组件中的组件
 	}

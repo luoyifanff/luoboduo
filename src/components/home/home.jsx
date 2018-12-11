@@ -6,12 +6,12 @@ import axios from 'axios'
 import {connect} from 'react-redux'
 
 class Home extends Component{
-	constructor(){
-		super();
+	constructor(props){
+		super(props);
 	}
 	componentWillMount(){
 		if(!this.props.homeSwiperlist)
-			this.props.getHomeSwiper()	
+			this.props.getHomeSwiper()
 		
 	}
 	componentDidMount(){
@@ -51,7 +51,7 @@ class Home extends Component{
 							speed:3000
 						}}>
 							{
-							this.props.homeSwiperlist.map(item=>(							
+							this.props.homeSwiperlist.map(item=>(
 								<div key={item.id}>
 									<img src={item.logo}/>
 								  	<p>{item.name}</p>
@@ -90,8 +90,8 @@ export default connect(
 						payload: {
 							SwiperImg: res.data.data,
 							isShow: true
-						}						
-					})
+						}
+					});
 				})		
 			}
 		},

@@ -53,20 +53,21 @@ class FindJob extends Component{
 
 
 export default connect(
-	(state)=>{
+	function mapPropsToState(state) {
 		return {
 			'searchBGImg':state.findjobReducer
 		}
-	}
-	,
-	{
-		getSwipe(){
-			return axios.get('/a/article/search?type=1').then(res=>{
-					return {
+	},
+	function mapDispatchToState(dispatch) {
+		return {
+			getSwipe() {
+				axios.get('/a/article/search?type=1').then(res=>{
+					dispatch({
 						type:'SwipeImg',
 						payload:res.data.data.articleList
-					}
-				})						
+					});
+				});
+			}
 		}
 	}
 )(FindJob);

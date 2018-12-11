@@ -3,8 +3,8 @@ import React,{Component} from 'react';
 import './aboutUs.scss'
 import {NavLink} from 'react-router-dom';
 class AboutUs extends Component{
-	constructor(){
-		super();
+	constructor(props){
+		super(props);
 		this.state={
 			
 		}

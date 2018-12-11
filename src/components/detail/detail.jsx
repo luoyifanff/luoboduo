@@ -16,6 +16,7 @@ class Detail extends Component{
 	}
 	
 	componentDidMount(){	
+		console.log(this.props, this.context);
 		
 		this.props.getDetail(this)
 
@@ -129,7 +130,8 @@ class Detail extends Component{
 	}
 	
 	starClick(){
-		
+			console.log(this);
+			
 			this.setState({
 				isLight : !this.state.isLight
 			},()=>{this.props.getStar(this.state.isLight,this.props.match.params.cid)})
@@ -184,7 +186,7 @@ export default connect(
 	}
 	,
 	{
-		getDetail:function getDetail(self){				
+		getDetail:function getDetail(self){
 			return dispatch=>{
 				axios.get(`/a/profession/${self.props.match.params.cid}`).then(res=>{
 					dispatch({

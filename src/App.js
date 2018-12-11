@@ -18,7 +18,7 @@ class App extends Component {
 	    return (
 	      <div className="App" ref='app'>
 	     		<Head event={this.headClick.bind(this)}></Head>
-	     		<Guide isShow= {this.state.isShow} event={this.routeClick.bind(this)}></Guide>
+	     		<Guide isShow= {this.state.isShow} event={this.routeClick.bind(this)} ref="guide"></Guide>
 	     		<div id='box'>
 		      	{
 					this.props.children
@@ -27,7 +27,11 @@ class App extends Component {
 		      	<Footer></Footer>
 	      </div>     
 	    );
-    }
+	};
+	componentDidMount() {
+		console.log(this.refs.guide);
+		
+	}
 	headClick(){
 		this.setState({
 			isShow : !this.state.isShow
@@ -38,7 +42,6 @@ class App extends Component {
 			isShow : !this.state.isShow
 		})
 	}
-	
 }
 
 
